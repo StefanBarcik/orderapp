@@ -14,6 +14,10 @@ class OrderController extends Controller
     }
 
     public function showStep2(Request $request) {
+        $this->validate($request , [
+           'product' => 'required',
+           'date' => 'required'
+        ]);
 
         $order = array(
             'product' => $request->input('product'),

@@ -31,9 +31,15 @@
                     <option value="200">Product 2</option>
                     <option value="300">Product 3</option>
                 </select>
+                @if($errors->has('product'))
+                    <span class="text-danger">{{ $errors->first('product') }}</span>
+                @endif
                 <br>
                 <label for="date">Choose date : </label><br>
                 <input class="form-control" type="datetime-local" name="date" id="date">
+                @if($errors->has('date'))
+                    <span class="text-danger">{{ $errors->first('date') }}</span>
+                @endif
                 <input type="hidden" name="price" id="price">
                 <input type="hidden" name="product" id="product">
                 <br>

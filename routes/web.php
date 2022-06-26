@@ -27,8 +27,6 @@ Route::group(['middleware' => ['guest']], function() {
 
     Route::get('/login', [LoginController::class, 'show']);
     Route::post('/login/confirm', [LoginController::class, 'login']);
-
-    Route::get('/order/step1', [OrderController::class, 'showStep1']);
 });
 
 Route::group(['middleware' => ['auth']], function() {
@@ -48,6 +46,7 @@ Route::group(['middleware' => ['auth']], function() {
 
 });
 
+Route::get('/order/step1', [OrderController::class, 'showStep1']);
 
 
 
