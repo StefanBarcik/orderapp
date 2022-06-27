@@ -3,7 +3,6 @@
         <ul class="nav navbar-nav">
             <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="/order/step1">Order</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Page 2</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             @guest
