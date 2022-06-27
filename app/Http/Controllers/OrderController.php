@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Session;
 
 class OrderController extends Controller
 {
+//    public function __construct() {
+//        $this->middleware('auth', ['only' => ['showstep2', 'step2', 'cancel']]);
+//    }
+
     public function showStep1() {
         return view('order.step1');
     }

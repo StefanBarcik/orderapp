@@ -25,7 +25,7 @@ Route::group(['middleware' => ['guest']], function() {
     Route::get('/register', [RegisterController::class, 'show']);
     Route::post('/register/confirm', [RegisterController::class, 'register']);
 
-    Route::get('/login', [LoginController::class, 'show']);
+    Route::get('/login', [LoginController::class, 'show'])->name('login');
     Route::post('/login/confirm', [LoginController::class, 'login']);
 });
 
